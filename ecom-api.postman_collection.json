@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "4d9c278a-362b-47e2-9949-7f2f2ecc5ed2",
+		"name": "ecom-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43614190",
+		"_collection_link": "https://arth-9949538.postman.co/workspace/Arth's-Workspace~dd9333f0-9797-4392-850b-0e17d8904e5d/collection/43614190-4d9c278a-362b-47e2-9949-7f2f2ecc5ed2?action=share&source=collection_link&creator=43614190"
+	},
+	"item": [
+		{
+			"name": "https://ecom-api-xvid.onrender.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ecom-api-xvid.onrender.com",
+					"protocol": "https",
+					"host": [
+						"ecom-api-xvid",
+						"onrender",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ecom-api-xvid.onrender.com/api/product",
+					"protocol": "https",
+					"host": [
+						"ecom-api-xvid",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mike\",\r\n    \"email\":\"tMikes123@gmail.com\",\r\n    \"password\":\"mike123\",\r\n    \"role\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecom-api-xvid.onrender.com/api/customer2",
+					"protocol": "https",
+					"host": [
+						"ecom-api-xvid",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"customer2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mike\",\r\n    \"email\":\"tMikes123@gmail.com\",\r\n    \"password\":\"mike123\"  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecom-api-xvid.onrender.com/api/customer2/login",
+					"protocol": "https",
+					"host": [
+						"ecom-api-xvid",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"customer2",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Crocs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecom-api-xvid.onrender.com/api/category",
+					"protocol": "https",
+					"host": [
+						"ecom-api-xvid",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddProducts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWE5ZjQ5Y2U4ZmMzMjU2YjNiNGU2NiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0MzQyOTUwOH0.ULZE6DLrhJNmJ6f_0AYlupQmlJSWcHINoCbNC7Unbw8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Flip-Flops\",\r\n    \"price\":44664,\r\n    \"category\":\"67ea9e38ce8fc3256b3b4e63\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecom-api-xvid.onrender.com/api/product",
+					"protocol": "https",
+					"host": [
+						"ecom-api-xvid",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
