@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 require("dotenv/config");
 const productRoutes = require("./routes/productRoute");
 const categoryRoutes = require("./routes/categoryRoutes");
@@ -10,6 +11,7 @@ const customer2routes = require("./routes/customer2Routes")
 const app = express();
 
 app.use(express.json());
+app.use(cors());//Cors Enable
 
 app.get("/",(req,res)=>{
 res.send("home");
